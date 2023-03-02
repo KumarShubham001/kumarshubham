@@ -1,0 +1,277 @@
+* {
+  outline: none; }
+
+.flex {
+  display: flex;
+  flex-direction: row; }
+  .flex.col {
+    flex-direction: column; }
+  .flex.perfect-center {
+    justify-content: center;
+    align-items: center; }
+  .flex.vertical-center {
+    align-items: center; }
+  .flex.vertical-start {
+    align-items: flex-start; }
+  .flex.vertical-end {
+    align-items: flex-end; }
+  .flex.horizontal-center {
+    justify-content: center; }
+  .flex.horizontal-start {
+    justify-content: flex-start; }
+  .flex.horizontal-end {
+    justify-content: flex-end; }
+
+.w100 {
+  width: 100%; }
+
+.h100 {
+  height: 100%; }
+
+.text-center {
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+loader {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center; }
+  loader div {
+    border: 5px solid #FFEBCF;
+    border-top-color: #F18C8E;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite; }
+
+.app {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  min-height: calc(100vh - 40px); }
+  .app .header h1 {
+    margin: 25px 35px 35px 35px;
+    font-family: 'Dancing Script', cursive !important;
+    color: #F18C8E; }
+  .app .header-bar {
+    height: 70px;
+    background: #F18C8E;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    display: table;
+    padding: 0px 10px; }
+    .app .header-bar h1 {
+      margin: 0px;
+      font-family: 'Dancing Script', cursive !important;
+      color: #FFEBCF;
+      font-size: 28px;
+      height: 100%;
+      width: fit-content;
+      float: left; }
+    .app .header-bar span {
+      height: 100%;
+      float: right;
+      margin-right: 15px; }
+      .app .header-bar span i {
+        font-size: 26px;
+        color: white; }
+  .app .progressBar {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    height: 5px;
+    overflow: hidden;
+    background-color: #FFEBCF; }
+    .app .progressBar .progress {
+      width: 0%;
+      background: #F18C8E;
+      border-radius: 0px; }
+  .app .main textarea {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #F18C8E;
+    resize: none;
+    background: #FFEBCF;
+    overflow-y: auto;
+    height: 123px;
+    margin-top: 5px;
+    padding: 10px; }
+  .app .main .button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center; }
+    .app .main .button-container button {
+      margin: 5px;
+      min-width: 110px;
+      min-height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFEBCF;
+      color: #305F72;
+      border: none; }
+      .app .main .button-container button:hover {
+        background-color: #F0B7A4; }
+  .app .main .indicator {
+    margin-top: 15px; }
+    .app .main .indicator .dot {
+      height: 10px;
+      display: inline-block;
+      width: 10px;
+      border-radius: 50%;
+      vertical-align: initial;
+      border: none;
+      outline: none;
+      margin-right: 5px; }
+      .app .main .indicator .dot.active {
+        background-color: #F18C8E; }
+      .app .main .indicator .dot.inactive {
+        background-color: #FFEBCF; }
+  .app .main .output-comment {
+    margin-top: 15px;
+    line-height: 25px; }
+    .app .main .output-comment span {
+      border: none;
+      padding: 3px 10px;
+      font-size: 0.85em;
+      border-radius: 25px;
+      cursor: pointer; }
+      .app .main .output-comment span.active {
+        background: #F18C8E; }
+      .app .main .output-comment span.inactive {
+        background-color: #FFEBCF; }
+  .app .main .copy-container {
+    margin-top: 15px; }
+    .app .main .copy-container .copy-button {
+      border-radius: 20px;
+      background-color: #305F72;
+      color: white;
+      font-size: 11px;
+      padding: 3px 10px;
+      margin-right: 5px;
+      cursor: pointer; }
+
+footer {
+  background: #F18C8E;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  bottom: 0px;
+  flex-direction: column; }
+  footer .gotoTop {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px; }
+    footer .gotoTop a {
+      padding: 5px;
+      border: 2px solid transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer .gotoTop a:hover {
+        border-color: #FFEBCF; }
+      footer .gotoTop a i {
+        font-size: 28px; }
+  footer a {
+    color: #F0B7A4;
+    text-decoration: none; }
+    footer a:hover {
+      text-decoration: dotted underline; }
+
+.heart {
+  animation: bump 1.5s infinite;
+  width: 20px;
+  text-align: center; }
+
+@keyframes bump {
+  0% {
+    font-size: 1.2em; }
+  25% {
+    font-size: inherit; }
+  50% {
+    font-size: 1.2em; }
+  75% {
+    font-size: inherit; }
+  100% {
+    font-size: inherit; } }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #F18C8E;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px; }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein .5s, fadeout .5s 2.5s;
+  animation: fadein .5s, fadeout .5s 2.5s; }
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@media only screen and (min-width: 992px) {
+  .hideForMobile {
+    display: block !important; }
+  .showForMobile {
+    display: none !important; }
+  .header-bar {
+    padding: 0px 45px; }
+  .main {
+    padding: 0 45px; } }
+
+@media only screen and (max-width: 992px) {
+  .hideForMobile {
+    display: none !important; }
+  .showForMobile {
+    display: block !important; } }

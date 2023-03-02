@@ -1,0 +1,27 @@
+:root {
+    /* --theme1: #E3E7F1;
+    --theme2: #C6CBEF;
+    --theme3: #8186D5;
+    --theme4: #494CA2;
+    --theme-dark: #1c1c1e;
+    --theme-light: #fefefe;
+
+    --eye-color: #fffdf9;
+    --iris-color: #343434;
+    --pupil-color: #8186D5;
+    --pupil-color: #ffa899; */
+
+
+
+    --theme1: #e5fefb;
+    --theme2: #cbfef8;
+    --theme3: #00fedc;
+    --theme4: #009482;
+    --theme-dark: #1c1c1e;
+    --theme-light: #fefefe;
+
+    --eye-color: #fffdf9;
+    --iris-color: #343434;
+    /* --pupil-color: #8186D5; */
+    --pupil-color: #00fedc;
+}

@@ -1,0 +1,109 @@
+* {
+    font-family: 'Mukta',
+        sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/*Custom scroll bars */
+::-webkit-scrollbar {
+    width: 10px;
+    /*display: none;*/
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url() center no-repeat #fff;
+    /* ../images/abc.gif */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex.col {
+    flex-direction: column;
+}
+
+.flex.perfect-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.vertical-center {
+    align-items: center;
+}
+
+.flex.vertical-start {
+    align-items: flex-start;
+}
+
+.flex.vertical-end {
+    align-items: flex-end;
+}
+
+.flex.horizontal-center {
+    justify-content: center;
+}
+
+.flex.horizontal-start {
+    justify-content: flex-start;
+}
+
+.flex.horizontal-end {
+    justify-content: flex-end;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}

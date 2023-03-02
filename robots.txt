@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /images/*
+Disallow: /maintenance.html
+sitemap: http://www.kumarshubham.cf/sitemap.xml

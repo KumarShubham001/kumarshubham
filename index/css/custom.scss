@@ -1,0 +1,248 @@
+:root {
+    --theme1: #E3E7F1;
+    --theme2: #C6CBEF;
+    --theme3: #8186D5;
+    --theme4: #494CA2;
+    --theme-dark: #1c1c1e;
+    --theme-light: #fefefe;
+
+    --eye-color: #fffdf9;
+    --iris-color: #343434;
+    --pupil-color: #8186D5;
+    /* --pupil-color: #ffa899; */
+}
+
+.w100 {
+    width: 100%;
+    display: inline-block;
+}
+
+.w50 {
+    display: inline-block;
+    width: 50%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: auto;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    overflow: auto;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 85%, 78% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 85%, 78% 100%, 0 100%, 0 0);
+
+    svg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-container {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+
+        .hero-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+
+            .hero {
+                img {
+                    width: 180px;
+                    border-radius: 50%;
+                    border: 6px solid;
+                    border-image: -moz-linear-gradient(left, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%);
+                    /* FF3.6+ */
+                    border-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #fed330), color-stop(20%, #fed330), color-stop(20%, #e63841), color-stop(20%, #e63841), color-stop(40%, #e63841), color-stop(40%, #5ed6fd), color-stop(40%, #5ed6fd), color-stop(40%, #e63841), color-stop(40%, #5ed6fd), color-stop(40%, #5ed6fd), color-stop(60%, #5ed6fd), color-stop(60%, #45c33b), color-stop(80%, #45c33b), color-stop(80%, #1172c0), color-stop(80%, #1172c0), color-stop(100%, #1172c0)) 1 stretch repeat;
+                    /* Chrome,Safari4+ */
+                    border-image: -webkit-linear-gradient(left, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%) 1 stretch repeat;
+                    /* Chrome10+,Safari5.1+ */
+                    border-image: -o-linear-gradient(left, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%) 1 stretch repeat;
+                    /* Opera 11.10+ */
+                    border-image: -ms-linear-gradient(left, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%) 1 stretch repeat;
+                    /* IE10+ */
+                    border-image: linear-gradient(to right, #fed330 0%, #fed330 20%, #e63841 20%, #e63841 20%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #e63841 40%, #5ed6fd 40%, #5ed6fd 40%, #5ed6fd 60%, #45c33b 60%, #45c33b 80%, #1172c0 80%, #1172c0 80%, #1172c0 100%) 1 stretch repeat;
+                    /* W3C */
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                h1.title {
+                    font-size: 18px;
+                    color: var(--theme4);
+                    font-weight: bold;
+                    letter-spacing: 0.7px;
+                }
+
+                .social-links {
+                    margin-top: 15px;
+
+                    ul {
+                        padding: 0px;
+                        margin: 0px;
+                        list-style-type: none;
+                        display: flex;
+                        width: auto;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            li {
+                                a {
+                                    color: var(--theme3);
+                                }
+                            }
+                        }
+
+                        li {
+                            display: inline-block;
+                            margin: 0px;
+                            padding: 0px;
+                            height: 30px;
+
+                            &:not(:first-of-type) {
+                                margin-left: 15px;
+                            }
+
+                            a {
+                                color: var(--theme4);
+                                font-size: 20px;
+                            }
+
+                            &:hover {
+                                a {
+                                    color: var(--theme4);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .link-wrapper {
+            width: 40%;
+            margin: auto;
+
+            .link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin-top: 10px;
+                overflow: hidden;
+
+                &.link-big {
+                    border-radius: 3px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                    &:hover {
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                i {
+                    font-size: 72px;
+                }
+
+                .tint {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-size: 22px;
+                        font-weight: bolder;
+                        letter-spacing: 0.3px;
+                        color: var(--theme1);
+                        display: block;
+
+                        i {
+                            font-size: 20px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .tint {
+                        cursor: pointer;
+                        background: rgba(0, 0, 0, 0.6);
+
+                        span {
+                            text-decoration: underline;
+                            color: white;
+
+                            background: black;
+                            border-radius: 10px;
+                            padding: 10px 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &.social {
+                    // background: var(--theme1);
+                    background: transparent;
+                    color: rgba(0, 0, 0, 0.8);
+                    padding: 15px;
+
+                    &:hover {
+                        background: #88fe94;
+                        // color: rgba(255, 255, 255, 1);
+                        color: #333333;
+                        cursor: pointer
+                    }
+                }
+            }
+        }
+
+        .footer {
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 0.2px;
+            word-spacing: 2px;
+            font-size: 12px;
+            font-weight: bold;
+
+            p {
+                margin: 0px;
+                padding: 0px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .link-wrapper {
+        width: calc(100% - 30px) !important;
+    }
+
+    .footer {
+        p {
+            width: 267px;
+            letter-spacing: 0.2px !important;
+        }
+    }
+}

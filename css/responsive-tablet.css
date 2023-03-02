@@ -1,0 +1,53 @@
+/* @media only screen and (min-width:501px) and (max-width: 959px) */
+
+@media only screen and (min-width: 768px) and (max-width: 960px) and (orientation: portrait) {
+    .col-sm-0 {
+        display: none;
+    }
+
+    section {
+        padding-top: 0px !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        min-height: 0px;
+    }
+
+    .loader {
+        margin-top: 35vh;
+    }
+
+    .header {
+        font-size: 4em;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    #about {
+        padding-top: 20px !important;
+    }
+
+    #projects .inner-project-container {
+        margin: 0px 15px;
+        width: calc(100% - 30px);
+    }
+
+    .contact h4 {
+        margin: -15px 10% 30px 10%;
+        width: 80%;
+    }
+}
+
+
+/* ONLY FOR IPAD PRO */
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+    .contact h4 {
+        margin: -15px 10% 30px 10%;
+        width: 80%;
+    }
+}
